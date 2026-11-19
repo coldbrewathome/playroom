@@ -1,5 +1,5 @@
 /* offline copy of the app; cache name changes with every build */
-const CACHE = "playroom-a934d23b4e";
+const CACHE = "playroom-d281a83474";
 const ASSETS = ["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-512.png"];
 
 self.addEventListener("install", function (e) {
