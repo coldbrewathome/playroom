@@ -67,8 +67,10 @@
   #stage.on{display:block}
   #frame{width:100%;height:100%;border:0;display:block;background:#0d1116}
 
+  .games.many{grid-template-columns:repeat(5,minmax(0,1fr))}
   @media (max-width:900px) and (orientation:portrait){
     .games{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .games.many{grid-template-columns:repeat(3,minmax(0,1fr))}
   }
   @media (max-height:560px){
     h1{font-size:clamp(20px,4.4vmin,32px)}
@@ -98,7 +100,7 @@ if ("serviceWorker" in navigator) {
     <div class="tagline">Pick a game. Tap to play.</div>
   </header>
 
-  <main class="games">
+  <main class="games many">
     <button class="game" data-game="math" style="--tint:#2F6BFF">
       <div class="art">🔢</div>
       <div class="txt">
